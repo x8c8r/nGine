@@ -2,5 +2,10 @@
 
 #include "SDL.h"
 
-#include "init.h"
+#include "fEngine_Consts.h"
+#include "fEngine_Window.h"
 
+namespace fEngine
+{
+	
+}

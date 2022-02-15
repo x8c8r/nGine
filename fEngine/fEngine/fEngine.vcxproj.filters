@@ -24,7 +24,7 @@
     <ClInclude Include="..\include\fEngine\fEngine.h">
       <Filter>Header Files\fEngine</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\fEngine\init.h">
+    <ClInclude Include="..\include\fEngine\fEngine_Window.h">
       <Filter>Header Files\fEngine</Filter>
     </ClInclude>
     <ClInclude Include="..\include\SDL2\begin_code.h">
@@ -288,9 +288,12 @@
     <ClInclude Include="..\include\SDL2\SDL_vulkan.h">
       <Filter>Header Files\SDL</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\fEngine\fEngine_Consts.h">
+      <Filter>Header Files\fEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\init.cpp">
+    <ClCompile Include="..\src\fEngine_Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\examples\main.cpp">

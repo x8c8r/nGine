@@ -2,7 +2,7 @@
 
 namespace fEngine {
 
-	/*Initialize a window
+	/*Initialize a new window
 	* const char* title :											Title of the window
 	* int screenX :	                                                Initial horizontal location of the window when it gets created
 	* int screenY :	                                                Initial vertical location of the window when it gets created

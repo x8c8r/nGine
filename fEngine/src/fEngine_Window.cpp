@@ -4,9 +4,12 @@
 namespace fEngine 
 {
 	SDL_Window *_window = NULL;
-	SDL_Event sdl_event;
 
+	SDL_Event sdl_event;
+	
 	bool shouldRun = true;
+
+	extern bool fEngine::triedQuit = false;
 
 	int initWindow(const char* title, int windowX, int windowY, int windowWidth, int windowHeight, bool closeOnQuit)
 	{
@@ -50,7 +53,7 @@ namespace fEngine
 				switch (sdl_event.type) 
 				{
 					case SDL_QUIT:
-						if (closeOnQuit == true) { shouldRun = false; }
+						if (closeOnQuit == true) { shouldRun = false; fEngine::triedQuit = !fEngine::triedQuit; }
 				}
 
 				SDL_UpdateWindowSurface(_window);

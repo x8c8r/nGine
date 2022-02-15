@@ -119,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,7 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\fEngine\fEngine.h" />
-    <ClInclude Include="..\include\fEngine\init.h" />
+    <ClInclude Include="..\include\fEngine\fEngine_Consts.h" />
+    <ClInclude Include="..\include\fEngine\fEngine_Window.h" />
     <ClInclude Include="..\include\SDL2\begin_code.h" />
     <ClInclude Include="..\include\SDL2\close_code.h" />
     <ClInclude Include="..\include\SDL2\SDL.h" />
@@ -238,7 +240,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\examples\main.cpp" />
-    <ClCompile Include="..\src\init.cpp" />
+    <ClCompile Include="..\src\fEngine_Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
