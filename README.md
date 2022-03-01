@@ -1,5 +1,5 @@
-# fEngine
-### A game engine
+# nGine
+### A personal SDL-based game engine
 
 ## Info
 Originally started as a failed project, I managed to make it work, and now improving it.
