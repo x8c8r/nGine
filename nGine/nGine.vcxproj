@@ -120,6 +120,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\SDL2;$(SolutionDir)include\ngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,9 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\fEngine\fEngine.h" />
-    <ClInclude Include="..\include\fEngine\fEngine_Consts.h" />
-    <ClInclude Include="..\include\fEngine\fEngine_Window.h" />
+    <ClInclude Include="..\include\ngine\ngine.h" />
     <ClInclude Include="..\include\SDL2\begin_code.h" />
     <ClInclude Include="..\include\SDL2\close_code.h" />
     <ClInclude Include="..\include\SDL2\SDL.h" />
@@ -240,7 +239,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\examples\main.cpp" />
-    <ClCompile Include="..\src\fEngine_Window.cpp" />
+    <ClCompile Include="..\src\ngine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
